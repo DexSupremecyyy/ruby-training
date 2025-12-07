@@ -1,2 +1,6 @@
+#Variable
+
 nama = "Ahmadi Jaka Abdul Manaf"
-puts "Nama gw #{nama}"
+print "Hallo, "
+puts "Nama saya #{nama}" # Mencetak line
+
