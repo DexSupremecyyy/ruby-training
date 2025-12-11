@@ -1,0 +1,17 @@
+Perlu Kamu Ketahui Terlebih Dahulu Sebelum Memulai
+
+[] = Ini disebut nya array
+{} = Ini disebut nya Hash
+[:name] = Ini disebutnya key
+
+@ = variable instence
+|| = Ini nama nya block parameter
+do = Ini namanya BLOCK(doang)
+
+def = Disebut nya method
+Defining Method = Nge define method/bisa dibilang membuat fungsi
+Refactoring = Merapikan kode, sebelum nya kan fungsi fungsi pada numpuk di looping, tapi sekarang karena fungsi nya itu udah di pindah ke method dan terlihat lebih clean
+Extract Method = sebutan untuk pemindahan func jadi in method
+
+# Object
+# Variable (buggatti)   =    Object (Chiron)
