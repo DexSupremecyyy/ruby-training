@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+
+  skip_before_action :verify_authenticity_token, if: -> { request.format.json? }
+
   before_action :cek_token
   before_action :set_post, only: %i[ show edit update destroy ]
 
@@ -84,5 +87,5 @@ class PostsController < ApplicationController
     def post_params
       params.expect(post: [ :judul, :isi ])
     end
-  end
+end
   
