@@ -1,4 +1,19 @@
+<p style="color: green; font-weight: bold;"><%= notice %></p>
+
 <h1>Hallo Dunia</h1>
 
 
 <p>Saya Ahmadi Jaka, Siswa SMK YADIKA SOREANG Sedang mempelajari <br>bahasa pemprogramman ruby beserta Framework Rails ^_^</p>
+<br>
+<br>
+<%= button_to "Sapa Jaka👋", button_sapa_path %>
+<% if notice.present? %>
+  <p>Halo</p> 
+<% end %>
+
+
+<%# 
+    CATATAN PENTING:
+    - Tag <% ... % > (tanpa sama dengan) : Cuma Logika (if/else)
+    - Tag < %= ... % > (pake sama dengan) : Nampilin ke Layar (Output)
+%>
