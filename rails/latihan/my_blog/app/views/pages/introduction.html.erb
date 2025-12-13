@@ -1,4 +1,8 @@
-<p style="color: green; font-weight: bold;"><%= notice %></p>
+<% if notice.present? %>
+  <div class="notif_sementara" style="background: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+    <%= notice %>
+  </div>
+<% end %>
 
 <h1>Hallo Dunia</h1>
 
@@ -6,11 +10,10 @@
 <p>Saya Ahmadi Jaka, Siswa SMK YADIKA SOREANG Sedang mempelajari <br>bahasa pemprogramman ruby beserta Framework Rails ^_^</p>
 <br>
 <br>
-<%= button_to "Sapa Jaka👋", button_sapa_path %>
-<% if notice.present? %>
-  <p>Halo</p> 
-<% end %>
-
+<div class="flex">
+<%= button_to "Sapa Jaka👋", button_sapa_path, class: "btn btn-primary" %>
+<%= link_to "Tentang Saya", about_path, class: "btn btn-primary" %>
+</div>
 
 <%# 
     CATATAN PENTING:

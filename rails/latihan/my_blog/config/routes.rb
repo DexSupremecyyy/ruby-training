@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "pages#introduction" # Ini berfungsi agar halaman default di arahkan ke halaman introduction. Contoh : localhost:3000 maka output nya akan menampilkan halaman perkenalan
   get "introduction", to: "pages#introduction" # Ini berfungsi untuk menambahkan url/alamat agar bisa di akses oleh di web
+  get "about", to: "pages#about"
 
   post "button_sapa", to: "pages#sapa_balik"
 
